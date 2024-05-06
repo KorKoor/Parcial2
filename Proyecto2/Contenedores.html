@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/BodyWas2.css" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="Logo">
+            <h2><a href="img/logo.png"></a></h2>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="" id="acerca-de">Acerca de</a></li>
+                <li><a href="#" id="popup-servicios">Proxim.</a></li>
+                <li><a href="https://github.com/KorKoor/Parcial2.git">Portafolio</a></li>
+                <li><a href="#">Proximan.</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="WebApis.html">Tecnologias de Web APIs</a></li>
+            <li><a href="Microservicios.html">Microservicios</a></li>
+            <li><a href="DesarrolloApi.html">Desarrollo de una Web API</a></li>
+            <li><a href="Contenedores.html">Manejo de Contenedores</a></li>
+            <li><a href="DesarrolloAppNube.html">Desarrollo de aplicaciones para la nube</a></li>
+            <li><a href="DesarrolloAspNet.html">Tecnologías para desarrollo de aplicaciones web en
+                    ASP.NET</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <section class="cuerpo_texto1">
+            <h1>Manejo de Contenedores</h1>
+
+            <p>El manejo de contenedores es una práctica cada vez más común en el desarrollo de software moderno. Los
+                contenedores ofrecen una forma de empaquetar una aplicación junto con todas sus dependencias y
+                configuraciones en un entorno aislado y portátil. Esto facilita la implementación consistente de
+                aplicaciones en diferentes entornos de ejecución, desde el desarrollo local hasta la producción en la
+                nube.</p>
+
+            <h3>¿Qué son los contenedores?</h3>
+            <img src="img/mc1.png">
+            <p>Los contenedores son unidades de software livianas y portátiles que encapsulan código, bibliotecas y
+                archivos de configuración necesarios para ejecutar una aplicación. A diferencia de las máquinas
+                virtuales, que virtualizan todo el sistema operativo subyacente, los contenedores comparten el mismo
+                kernel del sistema operativo del host, lo que los hace más eficientes en términos de recursos y más
+                rápidos de iniciar.</p>
+
+            <h3>Principales tecnologías de contenedores</h3>
+
+            <h4>Docker</h4>
+            <img class="imagen-derecha" src="img/mc2.png">
+            <p>Docker es la plataforma de contenedores más popular y ampliamente utilizada. Proporciona una forma
+                sencilla de crear, gestionar y desplegar contenedores utilizando imágenes predefinidas y un conjunto de
+                herramientas intuitivas. Docker se ha convertido en un estándar de facto en el desarrollo de
+                contenedores y es compatible con una amplia gama de tecnologías y servicios en la nube.</p>
+
+            <h4>Kubernetes</h4>
+
+            <p>Kubernetes es un sistema de orquestación de contenedores de código abierto desarrollado por Google.
+                Permite la gestión automatizada y escalable de aplicaciones contenerizadas en clústeres de servidores.
+                Kubernetes proporciona características avanzadas como el balanceo de carga, la escalabilidad automática,
+                la gestión de almacenamiento y la auto-curación, lo que lo convierte en una opción popular para
+                implementaciones de contenedores a gran escala.</p>
+
+            <h3>Beneficios del manejo de contenedores</h3>
+
+            <p>Los contenedores ofrecen una serie de beneficios para el desarrollo y despliegue de aplicaciones:</p>
+
+            <ul>
+                <li>Facilitan la implementación consistente de aplicaciones en diferentes entornos.</li>
+                <li>Son más eficientes en términos de recursos que las máquinas virtuales.</li>
+                <li>Permiten la gestión automatizada y escalable de aplicaciones en clústeres de servidores.</li>
+                <li>Fomentan la modularidad y la portabilidad de las aplicaciones.</li>
+                <li>Facilitan la colaboración y la integración continua en equipos de desarrollo.</li>
+            </ul>
+
+            <p>En resumen, el manejo de contenedores es una práctica fundamental en el desarrollo de software moderno
+                que ofrece beneficios significativos en términos de eficiencia, portabilidad y escalabilidad de las
+                aplicaciones.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4Dko5W96WHg?si=9mKrTGpnd7jEje8V"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="popup" id="popup" style="position: absolute; display: none;">
+        <span class="close" onclick="ocultarPopup()">&times;</span>
+        <h3>Razón de creación de la página</h3>
+        <p>Esta página fue creada como parte de un proyecto o examen para demostrar habilidades en el desarrollo web.
+        </p>
+    </div>
+
+    <script>
+        // Función para mostrar el cuadro emergente en la posición del mouse
+        function mostrarPopup(event) {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+            popup.style.left = event.clientX + "px";
+            popup.style.top = event.clientY + "px";
+        }
+
+        // Función para ocultar el cuadro emergente
+        function ocultarPopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Agregar evento de clic al enlace "Acerca de"
+        document.getElementById("acerca-de").addEventListener("click", function (event) {
+            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            mostrarPopup(event); // Mostrar el cuadro emergente en la posición del mouse al hacer clic en "Acerca de"
+        });
+    </script>
+</body>
+</html>

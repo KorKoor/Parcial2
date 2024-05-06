@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/BodyWas1.css" rel="stylesheet" type="text/css" />
+    <title></title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="Logo">
+            <h2><a href="img/logo.png"></a></h2>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="" id="acerca-de">Acerca de</a></li>
+                <li><a href="#" id="popup-servicios">Proxim.</a></li>
+                <li>
+                    <a href="https://github.com/KorKoor/Parcial2.git">Portafolio</a>
+                </li>
+                <li><a href="#">Proximan.</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="WebApis.html">Tecnologias de Web APIs</a></li>
+            <li><a href="Microservicios.html">Microservicios</a></li>
+            <li><a href="DesarrolloApi.html">Desarrollo de una Web API</a></li>
+            <li><a href="Contenedores.html">Manejo de Contenedores</a></li>
+            <li>
+                <a href="DesarrolloAppNube.html">Desarrollo de aplicaciones para la nube</a>
+            </li>
+            <li>
+                <a href="DesarrolloAspNet.html">Tecnologías para desarrollo de aplicaciones web en ASP.NET</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+        <section class="cuerpo_texto1">
+            <h1>Introducción a los Microservicios</h1>
+            <p>
+                Los microservicios representan un paradigma arquitectónico para el
+                desarrollo de software que ha ganado popularidad en los últimos años.
+                En contraste con las aplicaciones monolíticas, que se implementan como
+                una sola entidad, los microservicios dividen una aplicación en una
+                serie de servicios más pequeños e independientes, cada uno enfocado en
+                una tarea específica.
+            </p>
+
+            <p>
+                Cada microservicio se enfoca en una función de negocio o una capacidad
+                técnica particular. Por ejemplo, un microservicio podría manejar la
+                autenticación de usuarios, mientras que otro se encarga del
+                procesamiento de pagos. Estos microservicios son autónomos y se
+                comunican entre sí a través de protocolos estándar como HTTP, REST o
+                mensajes asincrónicos. Esta independencia permite a los equipos de
+                desarrollo trabajar de forma autónoma en cada servicio, lo que acelera
+                el desarrollo y despliegue de software.
+            </p>
+
+            <p>
+                Los microservicios se basan en varios principios arquitectónicos
+                clave, incluida la descomposición en servicios pequeños, la
+                independencia de despliegue, la descentralización del control y la
+                tolerancia a fallos. Estos principios permiten a las organizaciones
+                construir sistemas más flexibles y escalables, que pueden adaptarse
+                rápidamente a los cambios en los requisitos del negocio y las demandas
+                del mercado.
+            </p>
+            <img src="img/ms1.png" />
+            <p>
+                Los microservicios ofrecen una serie de beneficios significativos en
+                comparación con las aplicaciones monolíticas. Por ejemplo, permiten
+                escalar partes específicas de una aplicación de forma independiente,
+                lo que mejora la eficiencia y reduce los costos de infraestructura.
+                Además, los microservicios facilitan la adopción de nuevas tecnologías
+                y lenguajes de programación, ya que cada servicio puede implementarse
+                con la tecnología más adecuada para su función específica.
+            </p>
+
+            <p>
+                A pesar de sus beneficios, los microservicios también plantean
+                desafíos únicos en términos de gestión de la complejidad, coordinación
+                entre servicios, garantía de consistencia de datos y monitoreo y
+                depuración de sistemas distribuidos. La transición a una arquitectura
+                de microservicios puede requerir cambios culturales y organizativos
+                significativos dentro de una organización, así como inversiones
+                adicionales en herramientas y procesos de desarrollo.
+            </p>
+
+            <p>
+                Comparados con las aplicaciones monolíticas, los microservicios
+                ofrecen una mayor flexibilidad y agilidad en el desarrollo de
+                software. Mientras que en una aplicación monolítica un cambio en una
+                parte del código puede afectar a toda la aplicación, en un entorno de
+                microservicios, los cambios se limitan al servicio específico en el
+                que se realizan, lo que reduce el riesgo de impacto en otras partes
+                del sistema.
+            </p>
+            <img class="imagen-derecha" src="img/ms2.jpg" />
+            <p>
+                La modularidad inherente de los microservicios facilita la
+                implementación de prácticas de desarrollo ágiles, como la integración
+                continua y la entrega continua (CI/CD). Cada microservicio puede
+                desarrollarse, probarse e implementarse de forma independiente, lo que
+                acelera el ciclo de desarrollo y permite a los equipos responder
+                rápidamente a los cambios en los requisitos del negocio o las demandas
+                del mercado.
+            </p>
+
+            <p>
+                Los microservicios también promueven una mayor reutilización de código
+                y funcionalidades. Dado que cada servicio se enfoca en una tarea
+                específica y encapsula su propia lógica de negocio, los servicios
+                pueden ser fácilmente compartidos y reutilizados en múltiples
+                aplicaciones y contextos.
+            </p>
+
+            <p>
+                Sin embargo, la adopción de microservicios no está exenta de desafíos.
+                La gestión de la complejidad de un sistema distribuido compuesto por
+                múltiples servicios puede resultar complicada, especialmente en
+                términos de monitoreo, depuración y coordinación entre servicios.
+                Además, la fragmentación de una aplicación en microservicios puede
+                aumentar la latencia de red y la complejidad de la seguridad.
+            </p>
+
+            <p>
+                La elección entre una arquitectura monolítica y una basada en
+                microservicios depende en última instancia de las necesidades y
+                objetivos específicos de cada organización. Mientras que las
+                aplicaciones monolíticas pueden ser más adecuadas para proyectos
+                pequeños o equipos con recursos limitados, los microservicios ofrecen
+                una mayor escalabilidad, flexibilidad y agilidad para proyectos
+                grandes o empresas en crecimiento.
+            </p>
+
+            <p>
+                En resumen, los microservicios representan una forma moderna y
+                flexible de diseñar y desarrollar aplicaciones de software. Al
+                descomponer una aplicación en servicios más pequeños e independientes,
+                los microservicios permiten a las organizaciones construir sistemas
+                más flexibles, escalables y fáciles de mantener, que pueden adaptarse
+                rápidamente a los cambios en el mercado y los requisitos del negocio.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2sFczigWppk?si=rxkLsXGqp0ORJulA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                Una de las ventajas clave de los microservicios es su capacidad para
+                escalar de manera independiente. En una arquitectura monolítica, si
+                una parte de la aplicación experimenta un aumento repentino en la
+                demanda, toda la aplicación debe escalar horizontalmente para manejar
+                la carga adicional. Esto puede ser costoso en términos de recursos y
+                complejidad operativa.
+            </p>
+
+            <p>
+                Con los microservicios, cada servicio puede escalar de forma
+                independiente según sea necesario. Esto permite una asignación más
+                eficiente de recursos y una mejor gestión de la carga. Los servicios
+                que experimentan un alto volumen de tráfico pueden escalar
+                horizontalmente para manejar la demanda, mientras que los servicios
+                menos utilizados pueden permanecer en una escala más pequeña para
+                conservar recursos.
+            </p>
+
+            <p>
+                Otra ventaja importante de los microservicios es su capacidad para
+                facilitar la adopción de tecnologías emergentes y la experimentación
+                con nuevas herramientas y enfoques. Dado que cada servicio es
+                independiente, los equipos de desarrollo pueden probar nuevas
+                tecnologías en un servicio específico sin afectar al resto del
+                sistema. Esto fomenta la innovación y permite a las organizaciones
+                mantenerse al día con los avances tecnológicos.
+            </p>
+
+            <p>
+                Sin embargo, la adopción de microservicios también conlleva desafíos
+                significativos en términos de diseño, implementación y operación. La
+                gestión de la complejidad de un sistema distribuido compuesto por
+                múltiples servicios puede resultar complicada, especialmente en lo que
+                respecta a la coordinación entre servicios, la gestión de
+                transacciones distribuidas y la garantía de la coherencia de los
+                datos.
+            </p>
+            <img src="img/ms3.jpg" />
+            <p>
+                Además, la fragmentación de una aplicación en microservicios puede
+                introducir nuevos puntos de fallo y aumentar la superficie de ataque
+                para posibles vulnerabilidades de seguridad. La seguridad en un
+                entorno de microservicios requiere un enfoque cuidadoso, que incluya
+                prácticas como el cifrado de datos, la autenticación y la autorización
+                robustas, y la implementación de medidas de seguridad en capas en todo
+                el sistema.
+            </p>
+
+            <p>
+                En resumen, si bien los microservicios ofrecen una serie de ventajas
+                en términos de flexibilidad, escalabilidad y capacidad para adoptar
+                tecnologías emergentes, también presentan desafíos significativos en
+                términos de complejidad y seguridad. La adopción exitosa de
+                microservicios requiere un enfoque cuidadoso y una comprensión
+                profunda de los principios y prácticas asociadas con esta
+                arquitectura.
+            </p>
+            <img class="imagen-derecha" src="img/ms4.png" />
+            <p>
+                Los microservicios se han convertido en una opción popular para
+                diseñar y desarrollar aplicaciones en una amplia variedad de dominios.
+                Su arquitectura modular y distribuida ofrece numerosos beneficios en
+                términos de escalabilidad, flexibilidad y mantenibilidad. Para
+                comprender mejor cómo funcionan los microservicios en la práctica,
+                veamos algunos ejemplos de su aplicación en diferentes contextos.
+            </p>
+
+            <p>
+                1. <strong>E-commerce:</strong> En el ámbito del comercio electrónico,
+                los microservicios se utilizan para construir plataformas escalables y
+                personalizables. Por ejemplo, un servicio puede encargarse del
+                catálogo de productos, otro de la gestión de pedidos, otro de la
+                autenticación de usuarios, y así sucesivamente. Esta modularidad
+                permite a las empresas adaptar rápidamente sus sistemas a las
+                cambiantes demandas del mercado y escalar partes específicas de la
+                aplicación según sea necesario.
+            </p>
+
+            <p>
+                2. <strong>Plataformas de medios:</strong> En plataformas de streaming
+                de video o música, los microservicios se utilizan para gestionar
+                funciones como la reproducción de contenido, la recomendación de
+                videos o canciones, la gestión de perfiles de usuario, etc. Cada
+                microservicio puede estar optimizado para manejar una carga específica
+                de trabajo, lo que garantiza una experiencia fluida para los usuarios
+                incluso en momentos de alta demanda.
+            </p>
+
+            <p>
+                3. <strong>Aplicaciones de viajes:</strong> En aplicaciones de
+                reservas de viajes, como Airbnb o Booking.com, los microservicios se
+                utilizan para gestionar la búsqueda de alojamientos, la reserva de
+                habitaciones, la gestión de pagos, la generación de reseñas, entre
+                otras funcionalidades. Esta modularidad permite a las plataformas
+                ofrecer una amplia gama de servicios mientras se mantiene la
+                escalabilidad y el rendimiento.
+            </p>
+
+            <p>
+                4. <strong>Aplicaciones financieras:</strong> En el sector financiero,
+                los microservicios se utilizan para construir sistemas de banca en
+                línea, aplicaciones de gestión de carteras, plataformas de pago, etc.
+                Cada servicio puede estar diseñado para cumplir con regulaciones
+                específicas, garantizar la seguridad de las transacciones y ofrecer
+                una experiencia de usuario intuitiva y segura.
+            </p>
+
+            <p>
+                5. <strong>Aplicaciones de salud:</strong> En el campo de la salud,
+                los microservicios se utilizan para construir sistemas de gestión de
+                registros médicos electrónicos, aplicaciones de telemedicina,
+                plataformas de seguimiento de pacientes, etc. Esta modularidad permite
+                a los proveedores de atención médica adaptar los sistemas a las
+                necesidades específicas de cada paciente y garantizar la privacidad y
+                seguridad de los datos de salud.
+            </p>
+
+            <p>
+                En resumen, los microservicios ofrecen una forma flexible y escalable
+                de diseñar y desarrollar aplicaciones en una variedad de dominios. Su
+                enfoque modular permite a las empresas adaptarse rápidamente a las
+                cambiantes demandas del mercado, escalar partes específicas de la
+                aplicación según sea necesario y ofrecer una experiencia de usuario
+                consistente y de alta calidad.
+            </p>
+        </section>
+    </div>
+    <div class="popup" id="popup" style="position: absolute; display: none">
+        <span class="close" onclick="ocultarPopup()">&times;</span>
+        <h3>Razón de creación de la página</h3>
+        <p>
+            Esta página fue creada como parte de un proyecto o examen para demostrar
+            habilidades en el desarrollo web.
+        </p>
+    </div>
+
+    <script>
+        // Función para mostrar el cuadro emergente en la posición del mouse
+        function mostrarPopup(event) {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+            popup.style.left = event.clientX + "px";
+            popup.style.top = event.clientY + "px";
+        }
+
+        // Función para ocultar el cuadro emergente
+        function ocultarPopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Agregar evento de clic al enlace "Acerca de"
+        document
+            .getElementById("acerca-de")
+            .addEventListener("click", function (event) {
+                event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+                mostrarPopup(event); // Mostrar el cuadro emergente en la posición del mouse al hacer clic en "Acerca de"
+            });
+    </script>
+</body>
+
+</html>
